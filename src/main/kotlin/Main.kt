@@ -5,24 +5,42 @@
 const val PI = 3.1416
 
 fun main(args: Array<String>) {
-    /// Varibale
-    var name: String = "Bruno"
-    println(name)
-    name = "Francisco"
-    println(name)
-
-    /// Variable de solo lectura
-    val lastName: String = "Rangel"
-    println(lastName)
-
     println(PI)
 
-    /// Tipos de datos
-    var numero: Int = 25
+    var variable = "Hola soy una variable"
+    println(variable)
+    variable = "Hola ya cambie mi valor"
+    println(variable)
+
+    val soloLEctura = "Hola soy una variable de solo lectura"
+    println(soloLEctura)
+
+    /// Tipos de datos y variables
+    val numero: Int = 25
     println(numero)
-    var nombre: String = "Hola Mundo"
-    println(numero)
-    var mentira: Boolean = true
-    println(numero)
+    val numeroLargo: Long = 8342L
+    println(numeroLargo)
+    val doble: Double = 4.6
+    println(doble)
+    val flotante: Float = 4.3f
+    println(flotante)
+    val nombre: String = "Hola Mundo"
+    println(nombre)
+    val mentira: Boolean = true
+    println(mentira)
+
+    val primerValor = 30
+    val segundoValor = 13
+
+    /// Restamos los dos valores anteriores
+    val tercerValor = primerValor.minus(segundoValor)
+    /// Esto es lo mismo a
+    val otroTercerValor = primerValor - segundoValor
+    println(tercerValor)
+
+    val firstName: String = "Francisco"
+    val lastName: String = "Rangel"
+    val fullName = "Hola mi nombre es $firstName $lastName"
+    println(fullName)
 
 }
